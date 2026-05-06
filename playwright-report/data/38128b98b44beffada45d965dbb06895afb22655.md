@@ -1,0 +1,1023 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: generatedTest.spec.js >> Search Functionality Tests >> TC_001: Valid search for CBC
+- Location: output/generatedTest.spec.js:19:3
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.waitForLoadState: Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link "Tata 1mg logo" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "Tata 1mg logo" [ref=e8]
+        - generic [ref=e9]:
+          - link "MEDICINES" [ref=e10] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e11]: MEDICINES
+          - link "LAB TESTS" [ref=e12] [cursor=pointer]:
+            - /url: /labs
+            - generic [ref=e13]: LAB TESTS
+          - link "CONSULT DOCTORS" [ref=e14] [cursor=pointer]:
+            - /url: /online-doctor-consultation
+            - generic [ref=e15]: CONSULT DOCTORS
+          - link "CANCER CARE" [ref=e16] [cursor=pointer]:
+            - /url: /cancer-care/home
+            - generic [ref=e17]: CANCER CARE
+          - link "AYURVEDA" [ref=e18] [cursor=pointer]:
+            - /url: /ayurveda
+            - generic [ref=e19]: AYURVEDA
+          - link "PARTNERSHIPS" [ref=e20] [cursor=pointer]:
+            - /url: /partnerships
+            - generic [ref=e21]: PARTNERSHIPS
+          - link "CARE PLAN SAVE MORE" [ref=e22] [cursor=pointer]:
+            - /url: https://www.1mg.com/subscription-plan/myplan
+            - generic [ref=e23]: CARE PLAN
+            - generic [ref=e24]: SAVE MORE
+      - generic [ref=e25]:
+        - generic [ref=e27]:
+          - link "Login" [ref=e28]:
+            - generic [ref=e29] [cursor=pointer]: Login
+          - generic [ref=e30]: "|"
+          - link "Signup" [ref=e31]:
+            - generic [ref=e32] [cursor=pointer]: Signup
+        - link "Offers" [ref=e33] [cursor=pointer]:
+          - /url: /offers
+          - generic [ref=e34]: Offers
+        - link "cart icon" [ref=e35] [cursor=pointer]:
+          - /url: /cart
+          - img "cart icon" [ref=e36]
+        - link "Need Help?" [ref=e37] [cursor=pointer]:
+          - /url: /help
+          - generic [ref=e38]: Need Help?
+    - generic [ref=e40]:
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - img "Location Icon" [ref=e43]
+          - generic [ref=e44]: Enter your city
+          - textbox "Enter your city" [active] [ref=e45]: New DelhiCBC
+          - img "GPS icon" [ref=e46]
+        - generic [ref=e48]:
+          - generic [ref=e49]: Search for Medicines and Health Products
+          - textbox "Search for Medicines and Health Products" [ref=e50]
+          - img "search icon" [ref=e52] [cursor=pointer]
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - img "quick order" [ref=e55]
+          - generic [ref=e56]: QUICK BUY! Get 25% off on medicines*
+        - link "Quick order" [ref=e57] [cursor=pointer]:
+          - /url: /done-in-one/prescription-order
+          - button "Quick order" [ref=e58]:
+            - generic [ref=e59]: Quick order
+    - list [ref=e62]:
+      - listitem [ref=e63]:
+        - generic [ref=e64]:
+          - link "Health Resource Center" [ref=e65]
+          - img "chevron down" [ref=e66]
+      - listitem [ref=e67]:
+        - generic [ref=e68]:
+          - link "Hair Care" [ref=e69] [cursor=pointer]:
+            - /url: /categories/hair-care-20
+          - img "chevron down" [ref=e70]
+      - listitem [ref=e71]:
+        - generic [ref=e72]:
+          - link "Fitness & Health" [ref=e73] [cursor=pointer]:
+            - /url: /categories/fitness-health-7
+          - img "chevron down" [ref=e74]
+      - listitem [ref=e75]:
+        - generic [ref=e76]:
+          - link "Sexual Wellness" [ref=e77] [cursor=pointer]:
+            - /url: /categories/sexual-wellness-22
+          - img "chevron down" [ref=e78]
+      - listitem [ref=e79]:
+        - generic [ref=e80]:
+          - link "Vitamins & Nutrition" [ref=e81] [cursor=pointer]:
+            - /url: /categories/vitamins-nutrition-5
+          - img "chevron down" [ref=e82]
+      - listitem [ref=e83]:
+        - generic [ref=e84]:
+          - link "Supports & Braces" [ref=e85] [cursor=pointer]:
+            - /url: /categories/supports-braces-15
+          - img "chevron down" [ref=e86]
+      - listitem [ref=e87]:
+        - generic [ref=e88]:
+          - link "Immunity Boosters" [ref=e89] [cursor=pointer]:
+            - /url: /categories/immunity-boosters-142
+          - img "chevron down" [ref=e90]
+      - listitem [ref=e91]:
+        - generic [ref=e92]:
+          - link "Homeopathy" [ref=e93] [cursor=pointer]:
+            - /url: /categories/homeopathy-57
+          - img "chevron down" [ref=e94]
+      - listitem [ref=e95]:
+        - generic [ref=e96]:
+          - link "Pet Care" [ref=e97] [cursor=pointer]:
+            - /url: /categories/pet-care-612
+          - img "chevron down" [ref=e98]
+  - main [ref=e99]:
+    - generic [ref=e100]:
+      - generic [ref=e102]:
+        - button "cross" [ref=e106] [cursor=pointer]:
+          - img "cross" [ref=e107]
+        - iframe [ref=e114] [cursor=pointer]:
+          - link "Advertisement - dr-morepen-bg-03-gluco-one-glucose-monitoring-system-glucometer-with-gluco-one-bg-03-blood-glucose-25-test-strip-diabetes-monitoring-devices-blood-glucose-monitors-otc224030" [ref=f11e2] [cursor=pointer]:
+            - /url: https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjstkQGYztyM0e70W81rQvamQ9NENrpKDoBehvlP_lobxMhvuGFOTf8GgIhC6xOxCvA9YgO6KgER5uf-dHj0knxg1y2UIQuCIJ2pYZwZxv-9WQls3GQzAP3V7KZF4zECP4znPKaJ8FFLgFaVLLrboChcT-xiS5Pb78u_BRGimuFm5qyePEqjvKv5po9U7y3aDdKCEk_HR71nUZ8A1w1m2_yEHvl1TNDePOY0VQ2SlK5SwHiAwVrOwZP-GDFzzyLluHTt2bnf3WNWnxq-K6Ub8AUW81DTDGF5lzYVo66O8rDEWPdwALlvy39UxDtFDEQgakRhJ-MhMfUqeHqHMB1VGdl2vYgaOTHrqLAPcqLTrFLMpTqSlee64pL66YxJGS1biDdGpknXwebTVPb9Egg&sai=AMfl-YTHTR9x79U-ewKGqlWHhaAdO4c8XZFMj25xkqBPauIYGeOMf7ix33zP2huTBQPy4pssCvEyUCDNjIufehc71jFKaML4sFykdtzFRZ1SKCfWNHrozIfxdoFBZsmg1GgpwqQ_rN7TNZ161ap-OE7I8f0D0ntU0ZbZrJ9dcVXLOApHkxbB3jP53m1spMVCyVEatI6xqwrZVESTTcni7dddQeMLRgfIpMsh3qIrWjOmV3lsKIZYWCllAZoNbSvJP3ZmCHR2hSynxAkeYzUDluwHCZjmG6iHmNsEvE8v4rTug2EDzYyUOvQdXlQHnlGJ7ztA3SJ1vvUHb6icpfAWzql-2Gl4rvOGsOywHQB0BThHih-ZS0JotFhjW8zi-rrQyX_Bvw&sig=Cg0ArKJSzDyzoCP6Qof9&fbs_aeid=%5Bgw_fbsaeid%5D&adurl=https://www.1mg.com/otc/dr-morepen-bg-03-gluco-one-glucose-monitoring-system-glucometer-with-gluco-one-bg-03-blood-glucose-25-test-strip-diabetes-monitoring-devices-blood-glucose-monitors-otc224030
+            - img "Advertisement - dr-morepen-bg-03-gluco-one-glucose-monitoring-system-glucometer-with-gluco-one-bg-03-blood-glucose-25-test-strip-diabetes-monitoring-devices-blood-glucose-monitors-otc224030" [ref=f11e3]
+        - button "Buy Now" [ref=e120] [cursor=pointer]:
+          - generic [ref=e121]: Buy Now
+      - generic [ref=e124]:
+        - generic [ref=e126]:
+          - img "online sales banner" [ref=e129] [cursor=pointer]
+          - img "online sales banner" [ref=e132] [cursor=pointer]
+          - img "aa" [ref=e135] [cursor=pointer]
+          - img "online sales banner" [ref=e138] [cursor=pointer]
+          - img "aa" [ref=e141] [cursor=pointer]
+          - img "aa" [ref=e144] [cursor=pointer]
+        - generic [ref=e146]:
+          - generic [ref=e147]:
+            - button "Previous" [ref=e148] [cursor=pointer]:
+              - img "Previous" [ref=e149]
+            - button "Next" [ref=e150] [cursor=pointer]:
+              - img "Next" [ref=e151]
+          - generic [ref=e152]:
+            - button "Go to slide 1" [ref=e153] [cursor=pointer]
+            - button "Go to slide 2" [ref=e154] [cursor=pointer]
+            - button "Go to slide 3" [ref=e155] [cursor=pointer]
+            - button "Go to slide 4" [ref=e156] [cursor=pointer]
+            - button "Go to slide 5" [ref=e157] [cursor=pointer]
+            - button "Go to slide 6" [ref=e158] [cursor=pointer]
+          - button "Pause" [ref=e159] [cursor=pointer]:
+            - img "Pause" [ref=e160]
+      - 'heading "Tata 1mg: India''s Leading Online Pharmacy & Healthcare Platform" [level=1] [ref=e162]'
+      - generic [ref=e163]:
+        - link "Join 1mg Care plan" [ref=e165] [cursor=pointer]:
+          - /url: https://www.1mg.com/subscription-plan/subscriptions?utm_source=cpsales&utm_medium=allcampaigns&utm_campaign=homepage_bottom_scroller&referer=mini_care_plan_home_page
+          - img "Join 1mg Care plan" [ref=e166]
+        - generic [ref=e167]:
+          - generic [ref=e170]:
+            - heading "Shop by health concerns" [level=2] [ref=e174]
+            - generic [ref=e177]:
+              - link "Diabetes" [ref=e180] [cursor=pointer]:
+                - /url: /categories/diabetes-1
+                - generic [ref=e182]: Diabetes
+              - link "Heart Care" [ref=e185] [cursor=pointer]:
+                - /url: /categories/heart-care-35
+                - generic [ref=e187]: Heart Care
+              - link "Stomach Care" [ref=e190] [cursor=pointer]:
+                - /url: /categories/stomach-care-30
+                - generic [ref=e192]: Stomach Care
+              - link "Liver Care" [ref=e195] [cursor=pointer]:
+                - /url: /categories/health-conditions/liver-care-39
+                - generic [ref=e197]: Liver Care
+              - link "Bone, Joint & Muscle Care" [ref=e200] [cursor=pointer]:
+                - /url: /categories/health-conditions/bone-joint-muscle-care-34
+                - generic [ref=e202]: Bone, Joint & Muscle Care
+              - link "Kidney Care" [ref=e205] [cursor=pointer]:
+                - /url: /categories/health-conditions/kidney-care-40
+                - generic [ref=e207]: Kidney Care
+              - link "Derma Care" [ref=e210] [cursor=pointer]:
+                - /url: /categories/health-conditions/derma-care-1183
+                - generic [ref=e212]: Derma Care
+              - link "Respiratory Care" [ref=e215] [cursor=pointer]:
+                - /url: /categories/exclusive/respiratory-care-14
+                - generic [ref=e217]: Respiratory Care
+              - link "Eye Care" [ref=e220] [cursor=pointer]:
+                - /url: /categories/health-conditions/eye-care-31
+                - generic [ref=e222]: Eye Care
+          - generic [ref=e225]:
+            - generic [ref=e226]:
+              - heading "Full body health checkups" [level=2] [ref=e228]
+              - link "See all" [ref=e230] [cursor=pointer]:
+                - /url: labs/packages?utm_source=1mg&utm_medium=labshomewidget&utm_campaign=labsgrowth
+                - button "See all" [ref=e231]:
+                  - generic [ref=e232]: See all
+                  - img "Icon" [ref=e233]
+            - generic [ref=e236]:
+              - link "Comprehensive Gold Full Body Checkup Tata 1mg Labs Tata 1mg Labs Safe SAFE ₹2249 ₹4498 50% off" [ref=e239] [cursor=pointer]:
+                - /url: /labs/test/Comprehensive-Gold-Full-Body-Checkup-with-Smart-Report-2763
+                - generic [ref=e240]:
+                  - generic [ref=e243]: Comprehensive Gold Full Body Checkup
+                  - generic [ref=e244]:
+                    - generic [ref=e245]:
+                      - img "Tata 1mg Labs" [ref=e246]
+                      - generic [ref=e248]: Tata 1mg Labs
+                    - generic [ref=e250]:
+                      - img "Safe" [ref=e251]
+                      - generic [ref=e252]: SAFE
+                  - generic [ref=e254]:
+                    - generic [ref=e255]: ₹2249
+                    - generic [ref=e256]: ₹4498
+                    - generic [ref=e260]: 50% off
+              - link "Good Health Silver Package Tata 1mg Labs Tata 1mg Labs Safe SAFE ₹699 ₹1398 50% off" [ref=e263] [cursor=pointer]:
+                - /url: /labs/test/Good-Health-Silver-Package-with-Smart-Report-33027
+                - generic [ref=e264]:
+                  - generic [ref=e267]: Good Health Silver Package
+                  - generic [ref=e268]:
+                    - generic [ref=e269]:
+                      - img "Tata 1mg Labs" [ref=e270]
+                      - generic [ref=e272]: Tata 1mg Labs
+                    - generic [ref=e274]:
+                      - img "Safe" [ref=e275]
+                      - generic [ref=e276]: SAFE
+                  - generic [ref=e278]:
+                    - generic [ref=e279]: ₹699
+                    - generic [ref=e280]: ₹1398
+                    - generic [ref=e284]: 50% off
+              - link "Comprehensive Silver Full Body Checkup Tata 1mg Labs Tata 1mg Labs Safe SAFE ₹1899 ₹3798 50% off" [ref=e287] [cursor=pointer]:
+                - /url: /labs/test/Comprehensive-Silver-Full-Body-Checkup-with-Smart-Report-34938
+                - generic [ref=e288]:
+                  - generic [ref=e291]: Comprehensive Silver Full Body Checkup
+                  - generic [ref=e292]:
+                    - generic [ref=e293]:
+                      - img "Tata 1mg Labs" [ref=e294]
+                      - generic [ref=e296]: Tata 1mg Labs
+                    - generic [ref=e298]:
+                      - img "Safe" [ref=e299]
+                      - generic [ref=e300]: SAFE
+                  - generic [ref=e302]:
+                    - generic [ref=e303]: ₹1899
+                    - generic [ref=e304]: ₹3798
+                    - generic [ref=e308]: 50% off
+              - link "Comprehensive Platinum Full Body Checkup Tata 1mg Labs Tata 1mg Labs Safe SAFE ₹3699 ₹7398 50% off" [ref=e311] [cursor=pointer]:
+                - /url: /labs/test/Comprehensive-Platinum-Full-Body-Checkup-with-Smart-Report-34952
+                - generic [ref=e312]:
+                  - generic [ref=e315]: Comprehensive Platinum Full Body Checkup
+                  - generic [ref=e316]:
+                    - generic [ref=e317]:
+                      - img "Tata 1mg Labs" [ref=e318]
+                      - generic [ref=e320]: Tata 1mg Labs
+                    - generic [ref=e322]:
+                      - img "Safe" [ref=e323]
+                      - generic [ref=e324]: SAFE
+                  - generic [ref=e326]:
+                    - generic [ref=e327]: ₹3699
+                    - generic [ref=e328]: ₹7398
+                    - generic [ref=e332]: 50% off
+              - link "Good Health Platinum Package Tata 1mg Labs SAFE ₹1499 ₹2998 50% off" [ref=e335] [cursor=pointer]:
+                - /url: /labs/test/Good-Health-Platinum-Package-with-Smart-Report-34937
+                - generic [ref=e336]:
+                  - generic [ref=e339]: Good Health Platinum Package
+                  - generic [ref=e340]:
+                    - generic [ref=e343]: Tata 1mg Labs
+                    - generic [ref=e346]: SAFE
+                  - generic [ref=e348]:
+                    - generic [ref=e349]: ₹1499
+                    - generic [ref=e350]: ₹2998
+                    - generic [ref=e354]: 50% off
+              - link "Good Health Gold Package Tata 1mg Labs SAFE ₹999 ₹1998 50% off" [ref=e357] [cursor=pointer]:
+                - /url: /labs/test/Good-Health-Gold-Package-with-Smart-Report-33028
+                - generic [ref=e358]:
+                  - generic [ref=e361]: Good Health Gold Package
+                  - generic [ref=e362]:
+                    - generic [ref=e365]: Tata 1mg Labs
+                    - generic [ref=e368]: SAFE
+                  - generic [ref=e370]:
+                    - generic [ref=e371]: ₹999
+                    - generic [ref=e372]: ₹1998
+                    - generic [ref=e376]: 50% off
+          - generic [ref=e379]:
+            - generic [ref=e380]:
+              - heading "Featured brands" [level=2] [ref=e383]
+              - link "See all" [ref=e385] [cursor=pointer]:
+                - /url: /categories/featured-128
+                - button "See all" [ref=e386]:
+                  - generic [ref=e387]: See all
+                  - img "Icon" [ref=e388]
+            - generic [ref=e391]:
+              - link "Category" [ref=e394] [cursor=pointer]:
+                - /url: /categories/fitness-supplements/top-picks-vitamins-nutrition/shelcal-1027
+                - img "Category" [ref=e396]
+              - link "Category" [ref=e399] [cursor=pointer]:
+                - /url: /categories/featured/top-brands/drmorepen-634
+                - img "Category" [ref=e401]
+              - link "Category" [ref=e404] [cursor=pointer]:
+                - /url: /categories/featured/top-brands/wellman-2552
+                - img "Category" [ref=e406]
+              - link "Category" [ref=e409] [cursor=pointer]:
+                - /url: /categories/featured/top-brands/dabur-79
+                - img "Category" [ref=e411]
+              - link "Category" [ref=e414] [cursor=pointer]:
+                - /url: /categories/featured/top-brands/horlicks-651
+                - img "Category" [ref=e416]
+              - link "Category" [ref=e419] [cursor=pointer]:
+                - /url: /categories/featured/top-brands/omron-287
+                - img "Category" [ref=e421]
+              - link "Category" [ref=e424] [cursor=pointer]:
+                - /url: /categories/featured/top-brands/centrum-1416
+                - img "Category" [ref=e426]
+              - link "Category" [ref=e429] [cursor=pointer]:
+                - /url: /categories/featured/tata-1mg-healthcare-products-664
+                - img "Category" [ref=e431]
+              - link [ref=e434] [cursor=pointer]:
+                - /url: /categories/featured/1mg-health-products/tejasya-1407
+          - generic [ref=e438]:
+            - heading "Personal care" [level=2] [ref=e442]
+            - generic [ref=e445]:
+              - link [ref=e448] [cursor=pointer]:
+                - /url: /categories/skin-care-19
+              - link [ref=e452] [cursor=pointer]:
+                - /url: /categories/hair-care-20
+              - link [ref=e456] [cursor=pointer]:
+                - /url: /categories/sexual-wellness-22
+              - link [ref=e460] [cursor=pointer]:
+                - /url: /categories/personal-care-products/oral-care-26
+              - link [ref=e464] [cursor=pointer]:
+                - /url: /categories/elderly-care-21
+              - link [ref=e468] [cursor=pointer]:
+                - /url: /categories/baby-care-24
+              - link [ref=e472] [cursor=pointer]:
+                - /url: /categories/personal-care-products/women-care-23
+              - link [ref=e476] [cursor=pointer]:
+                - /url: /categories/personal-care-products/men-care/men-grooming-727
+              - link [ref=e480] [cursor=pointer]:
+                - /url: /categories/pet-care-612
+          - generic [ref=e484]:
+            - generic [ref=e485]:
+              - heading "Pathology Tests | Up to 70% off" [level=2] [ref=e487]
+              - link "See all" [ref=e489] [cursor=pointer]:
+                - /url: /labs?utm_source=1mg&utm_medium=widget_pathology&utm_campaign=crosssell
+                - button "See all" [ref=e490]:
+                  - generic [ref=e491]: See all
+                  - img "Icon" [ref=e492]
+            - generic [ref=e495]:
+              - link "Lipid Profile Contains 8 tests Tata 1mg Labs SAFE ₹490" [ref=e498] [cursor=pointer]:
+                - /url: /labs/test/Lipid-Profile-1909
+                - generic [ref=e499]:
+                  - generic [ref=e501]:
+                    - generic [ref=e502]: Lipid Profile
+                    - generic [ref=e503]: Contains 8 tests
+                  - generic [ref=e504]:
+                    - generic [ref=e507]: Tata 1mg Labs
+                    - generic [ref=e510]: SAFE
+                  - generic [ref=e513]: ₹490
+              - link "CBC (Complete Blood Count) Contains 21 tests Tata 1mg Labs SAFE ₹319 ₹350 9% off" [ref=e516] [cursor=pointer]:
+                - /url: /labs/test/CBC-(Complete-Blood-Count)-1717
+                - generic [ref=e517]:
+                  - generic [ref=e519]:
+                    - generic [ref=e520]: CBC (Complete Blood Count)
+                    - generic [ref=e521]: Contains 21 tests
+                  - generic [ref=e522]:
+                    - generic [ref=e525]: Tata 1mg Labs
+                    - generic [ref=e528]: SAFE
+                  - generic [ref=e530]:
+                    - generic [ref=e531]: ₹319
+                    - generic [ref=e532]: ₹350
+                    - generic [ref=e536]: 9% off
+              - link "Thyroid Profile Total (T3, T4 & TSH) Contains 3 tests Tata 1mg Labs SAFE ₹490 ₹550 11% off" [ref=e539] [cursor=pointer]:
+                - /url: /labs/test/Thyroid-Profile-Total-(T3,-T4-and-TSH)-2571
+                - generic [ref=e540]:
+                  - generic [ref=e542]:
+                    - generic [ref=e543]: Thyroid Profile Total (T3, T4 & TSH)
+                    - generic [ref=e544]: Contains 3 tests
+                  - generic [ref=e545]:
+                    - generic [ref=e548]: Tata 1mg Labs
+                    - generic [ref=e551]: SAFE
+                  - generic [ref=e553]:
+                    - generic [ref=e554]: ₹490
+                    - generic [ref=e555]: ₹550
+                    - generic [ref=e559]: 11% off
+              - link "Lipid Profile, Non Fasting Contains 8 tests Tata 1mg Labs SAFE ₹399 ₹699 43% off" [ref=e562] [cursor=pointer]:
+                - /url: /labs/test/Lipid-Profile,-Non-Fasting-35176
+                - generic [ref=e563]:
+                  - generic [ref=e565]:
+                    - generic [ref=e566]: Lipid Profile, Non Fasting
+                    - generic [ref=e567]: Contains 8 tests
+                  - generic [ref=e568]:
+                    - generic [ref=e571]: Tata 1mg Labs
+                    - generic [ref=e574]: SAFE
+                  - generic [ref=e576]:
+                    - generic [ref=e577]: ₹399
+                    - generic [ref=e578]: ₹699
+                    - generic [ref=e582]: 43% off
+              - link "Coronavirus Covid-19 Test- RT-PCR (COVID- RT PCR ) Contains 1 test Tata 1mg Labs SAFE ₹500" [ref=e585] [cursor=pointer]:
+                - /url: /labs/test/Coronavirus-Covid--19-test--RT-PCR-33462
+                - generic [ref=e586]:
+                  - generic [ref=e588]:
+                    - generic [ref=e589]:
+                      - text: Coronavirus Covid-19 Test- RT-PCR
+                      - generic [ref=e590]: (COVID- RT PCR )
+                    - generic [ref=e591]: Contains 1 test
+                  - generic [ref=e592]:
+                    - generic [ref=e595]: Tata 1mg Labs
+                    - generic [ref=e598]: SAFE
+                  - generic [ref=e601]: ₹500
+              - link "LFT (Liver Function Test) Contains 11 tests Tata 1mg Labs SAFE ₹500 ₹890 44% off" [ref=e604] [cursor=pointer]:
+                - /url: /labs/test/LFT-(Liver-Function-Test)-2562
+                - generic [ref=e605]:
+                  - generic [ref=e607]:
+                    - generic [ref=e608]: LFT (Liver Function Test)
+                    - generic [ref=e609]: Contains 11 tests
+                  - generic [ref=e610]:
+                    - generic [ref=e613]: Tata 1mg Labs
+                    - generic [ref=e616]: SAFE
+                  - generic [ref=e618]:
+                    - generic [ref=e619]: ₹500
+                    - generic [ref=e620]: ₹890
+                    - generic [ref=e624]: 44% off
+              - link "KFT with Electrolytes (Kidney Function Test with Electrolytes) Contains 8 tests Tata 1mg Labs SAFE ₹500 ₹1065 53% off" [ref=e627] [cursor=pointer]:
+                - /url: /labs/test/KFT-with-Electrolytes-(Kidney-Function-Test-with-Electrolytes)-32826
+                - generic [ref=e628]:
+                  - generic [ref=e630]:
+                    - generic [ref=e631]: KFT with Electrolytes (Kidney Function Test with Electrolytes)
+                    - generic [ref=e632]: Contains 8 tests
+                  - generic [ref=e633]:
+                    - generic [ref=e636]: Tata 1mg Labs
+                    - generic [ref=e639]: SAFE
+                  - generic [ref=e641]:
+                    - generic [ref=e642]: ₹500
+                    - generic [ref=e643]: ₹1065
+                    - generic [ref=e647]: 53% off
+              - link "Vitamin B12 (Vit B12) Contains 1 test Tata 1mg Labs SAFE ₹680 ₹1200 43% off" [ref=e650] [cursor=pointer]:
+                - /url: /labs/test/Vitamin-B12-1388
+                - generic [ref=e651]:
+                  - generic [ref=e653]:
+                    - generic [ref=e654]:
+                      - text: Vitamin B12
+                      - generic [ref=e655]: (Vit B12)
+                    - generic [ref=e656]: Contains 1 test
+                  - generic [ref=e657]:
+                    - generic [ref=e660]: Tata 1mg Labs
+                    - generic [ref=e663]: SAFE
+                  - generic [ref=e665]:
+                    - generic [ref=e666]: ₹680
+                    - generic [ref=e667]: ₹1200
+                    - generic [ref=e671]: 43% off
+          - generic [ref=e674]:
+            - generic [ref=e675]:
+              - heading "Super saving deals" [level=2] [ref=e678]
+              - link "See all" [ref=e680] [cursor=pointer]:
+                - /url: /categories/featured/top-discounts/super-saving-deals-1512
+                - button "See all" [ref=e681]:
+                  - generic [ref=e682]: See all
+                  - img "Icon" [ref=e683]
+            - generic [ref=e686]:
+              - 'link "Clocip Anti-Fungal Dusting Powder | For Skin Infections, Itching, Rashes Clocip Anti-Fungal Dusting Powder | For Skin Infections, Itching, Rashes bottle of 100 gm Dusting Powder Get in 30 mins Discounted Price: ₹91.9 Original Price: ₹131.25 Discount Percentage: 30% off" [ref=e689] [cursor=pointer]':
+                - /url: /drugs/clocip-anti-fungal-dusting-powder-for-skin-infections-itching-rashes-204487
+                - generic [ref=e691]:
+                  - generic [ref=e692]:
+                    - img "Clocip Anti-Fungal Dusting Powder | For Skin Infections, Itching, Rashes"
+                  - generic [ref=e693]:
+                    - generic [ref=e694]: Clocip Anti-Fungal Dusting Powder | For Skin Infections, Itching, Rashes
+                    - generic [ref=e695]: bottle of 100 gm Dusting Powder
+                    - generic [ref=e697]:
+                      - text: Get in
+                      - generic [ref=e698]: 30 mins
+                    - generic [ref=e700]:
+                      - generic [ref=e701]:
+                        - generic [ref=e702]: "Discounted Price:"
+                        - text: ₹91.9
+                      - generic [ref=e703]:
+                        - generic [ref=e704]: "Original Price:"
+                        - text: ₹131.25
+                      - generic [ref=e705]:
+                        - generic [ref=e706]: "Discount Percentage:"
+                        - text: 30% off
+              - 'link "Cofsils Gargle Cofsils Gargle bottle of 100 ml Gargle 4.4 (216) Get by 9pm, Today Discounted Price: ₹75.7 Original Price: ₹159.37 Discount Percentage: 53% off" [ref=e709] [cursor=pointer]':
+                - /url: /otc/cofsils-gargle-otc564616
+                - generic [ref=e711]:
+                  - generic [ref=e712]:
+                    - img "Cofsils Gargle"
+                  - generic [ref=e713]:
+                    - generic [ref=e714]: Cofsils Gargle
+                    - generic [ref=e715]: bottle of 100 ml Gargle
+                    - generic [ref=e717]:
+                      - img [ref=e718]
+                      - img [ref=e722]
+                      - img [ref=e726]
+                      - img [ref=e730]
+                      - img [ref=e734]
+                      - generic [ref=e740]: "4.4"
+                      - generic [ref=e741]: (216)
+                    - generic [ref=e743]:
+                      - text: Get by
+                      - generic [ref=e744]: 9pm, Today
+                    - generic [ref=e746]:
+                      - generic [ref=e747]:
+                        - generic [ref=e748]: "Discounted Price:"
+                        - text: ₹75.7
+                      - generic [ref=e749]:
+                        - generic [ref=e750]: "Original Price:"
+                        - text: ₹159.37
+                      - generic [ref=e751]:
+                        - generic [ref=e752]: "Discount Percentage:"
+                        - text: 53% off
+              - 'link "Eloway Aloe Vera Moisturizing Gel Eloway Aloe Vera Moisturizing Gel box of 100 gm Gel 4.5 (6) Get by 9pm, Today Discounted Price: ₹107 Original Price: ₹150 Discount Percentage: 29% off" [ref=e755] [cursor=pointer]':
+                - /url: /otc/eloway-aloe-vera-moisturizing-gel-otc704633
+                - generic [ref=e757]:
+                  - generic [ref=e758]:
+                    - img "Eloway Aloe Vera Moisturizing Gel"
+                  - generic [ref=e759]:
+                    - generic [ref=e760]: Eloway Aloe Vera Moisturizing Gel
+                    - generic [ref=e761]: box of 100 gm Gel
+                    - generic [ref=e763]:
+                      - img [ref=e764]
+                      - img [ref=e768]
+                      - img [ref=e772]
+                      - img [ref=e776]
+                      - img [ref=e780]
+                      - generic [ref=e786]: "4.5"
+                      - generic [ref=e787]: (6)
+                    - generic [ref=e789]:
+                      - text: Get by
+                      - generic [ref=e790]: 9pm, Today
+                    - generic [ref=e792]:
+                      - generic [ref=e793]:
+                        - generic [ref=e794]: "Discounted Price:"
+                        - text: ₹107
+                      - generic [ref=e795]:
+                        - generic [ref=e796]: "Original Price:"
+                        - text: ₹150
+                      - generic [ref=e797]:
+                        - generic [ref=e798]: "Discount Percentage:"
+                        - text: 29% off
+              - 'link "Easylax L Oral Solution Lemon Sugar Free Easylax L Oral Solution Lemon Sugar Free bottle of 200 ml Oral Solution Get by 9pm, Today Discounted Price: ₹240 Original Price: ₹258.3 Discount Percentage: 7% off" [ref=e801] [cursor=pointer]':
+                - /url: /drugs/easylax-l-oral-solution-lemon-sugar-free-750077
+                - generic [ref=e803]:
+                  - generic [ref=e804]:
+                    - img "Easylax L Oral Solution Lemon Sugar Free"
+                  - generic [ref=e805]:
+                    - generic [ref=e806]: Easylax L Oral Solution Lemon Sugar Free
+                    - generic [ref=e807]: bottle of 200 ml Oral Solution
+                    - generic [ref=e809]:
+                      - text: Get by
+                      - generic [ref=e810]: 9pm, Today
+                    - generic [ref=e812]:
+                      - generic [ref=e813]:
+                        - generic [ref=e814]: "Discounted Price:"
+                        - text: ₹240
+                      - generic [ref=e815]:
+                        - generic [ref=e816]: "Original Price:"
+                        - text: ₹258.3
+                      - generic [ref=e817]:
+                        - generic [ref=e818]: "Discount Percentage:"
+                        - text: 7% off
+              - 'link "Omnigel Pain Relief from Sprain, Injury, Back Pain, Muscle Pain, Body Pain, Knee Pain, Joint Pain Omnigel Pain Relief from Sprain, Injury, Back Pain, Muscle Pain, Body Pain, Knee Pain, Joint Pain tube of 100 gm Gel 4.5 (3610) Get in 30 mins Discounted Price: ₹196 Original Price: ₹314.6 Discount Percentage: 38% off" [ref=e821] [cursor=pointer]':
+                - /url: /otc/omnigel-pain-relief-from-sprain-injury-back-pain-muscle-pain-body-pain-knee-pain-joint-pain-otc855479
+                - generic [ref=e823]:
+                  - generic [ref=e824]:
+                    - img "Omnigel Pain Relief from Sprain, Injury, Back Pain, Muscle Pain, Body Pain, Knee Pain, Joint Pain"
+                  - generic [ref=e825]:
+                    - generic [ref=e826]: Omnigel Pain Relief from Sprain, Injury, Back Pain, Muscle Pain, Body Pain, Knee Pain, Joint Pain
+                    - generic [ref=e827]: tube of 100 gm Gel
+                    - generic [ref=e829]:
+                      - img [ref=e830]
+                      - img [ref=e834]
+                      - img [ref=e838]
+                      - img [ref=e842]
+                      - img [ref=e846]
+                      - generic [ref=e852]: "4.5"
+                      - generic [ref=e853]: (3610)
+                    - generic [ref=e855]:
+                      - text: Get in
+                      - generic [ref=e856]: 30 mins
+                    - generic [ref=e858]:
+                      - generic [ref=e859]:
+                        - generic [ref=e860]: "Discounted Price:"
+                        - text: ₹196
+                      - generic [ref=e861]:
+                        - generic [ref=e862]: "Original Price:"
+                        - text: ₹314.6
+                      - generic [ref=e863]:
+                        - generic [ref=e864]: "Discount Percentage:"
+                        - text: 38% off
+              - 'link "Combo Pack of Tata 1mg Hot Water Bag & Tata 1mg Pain Relief Gel (75gm) Combo Pack of Tata 1mg Hot Water Bag & Tata 1mg Pain Relief Gel (75gm) combo pack of 2 Packs 4.3 (1130) Discounted Price: ₹520 Original Price: ₹675 Discount Percentage: 23% off" [ref=e867] [cursor=pointer]':
+                - /url: /otc/combo-pack-of-tata-1mg-hot-water-bag-tata-1mg-pain-relief-gel-75gm-otc834752
+                - generic [ref=e869]:
+                  - generic [ref=e870]:
+                    - img "Combo Pack of Tata 1mg Hot Water Bag & Tata 1mg Pain Relief Gel (75gm)"
+                  - generic [ref=e871]:
+                    - generic [ref=e872]: Combo Pack of Tata 1mg Hot Water Bag & Tata 1mg Pain Relief Gel (75gm)
+                    - generic [ref=e873]: combo pack of 2 Packs
+                    - generic [ref=e875]:
+                      - img [ref=e876]
+                      - img [ref=e880]
+                      - img [ref=e884]
+                      - img [ref=e888]
+                      - img [ref=e892]
+                      - generic [ref=e898]: "4.3"
+                      - generic [ref=e899]: (1130)
+                    - generic [ref=e901]:
+                      - generic [ref=e902]:
+                        - generic [ref=e903]: "Discounted Price:"
+                        - text: ₹520
+                      - generic [ref=e904]:
+                        - generic [ref=e905]: "Original Price:"
+                        - text: ₹675
+                      - generic [ref=e906]:
+                        - generic [ref=e907]: "Discount Percentage:"
+                        - text: 23% off
+              - 'link "Combo Pack of Tata 1mg Pain Relief Spray (100gm) & Tata 1mg Calcium 500mg & Vitamin D3 250IU Tablet (15) Combo Pack of Tata 1mg Pain Relief Spray (100gm) & Tata 1mg Calcium 500mg & Vitamin D3 250IU Tablet (15) combo pack of 2 Packs 4.4 (1221) Discounted Price: ₹237 Original Price: ₹354 Discount Percentage: 33% off" [ref=e910] [cursor=pointer]':
+                - /url: /otc/combo-pack-of-tata-1mg-pain-relief-spray-100gm-tata-1mg-calcium-500mg-vitamin-d3-250iu-tablet-15-otc883221
+                - generic [ref=e912]:
+                  - generic [ref=e913]:
+                    - img "Combo Pack of Tata 1mg Pain Relief Spray (100gm) & Tata 1mg Calcium 500mg & Vitamin D3 250IU Tablet (15)"
+                  - generic [ref=e914]:
+                    - generic [ref=e915]: Combo Pack of Tata 1mg Pain Relief Spray (100gm) & Tata 1mg Calcium 500mg & Vitamin D3 250IU Tablet (15)
+                    - generic [ref=e916]: combo pack of 2 Packs
+                    - generic [ref=e918]:
+                      - img [ref=e919]
+                      - img [ref=e923]
+                      - img [ref=e927]
+                      - img [ref=e931]
+                      - img [ref=e935]
+                      - generic [ref=e941]: "4.4"
+                      - generic [ref=e942]: (1221)
+                    - generic [ref=e944]:
+                      - generic [ref=e945]:
+                        - generic [ref=e946]: "Discounted Price:"
+                        - text: ₹237
+                      - generic [ref=e947]:
+                        - generic [ref=e948]: "Original Price:"
+                        - text: ₹354
+                      - generic [ref=e949]:
+                        - generic [ref=e950]: "Discount Percentage:"
+                        - text: 33% off
+              - 'link "Pain Relief Gel for Lower Back Pain, Joint Pain, Neck Pain & Sprain | by Tata 1mg Pain Relief Gel for Lower Back Pain, Joint Pain, Neck Pain & Sprain | by Tata 1mg tube of 75 gm Gel 4.3 (574) Get in 30 mins Discounted Price: ₹155 Original Price: ₹225 Discount Percentage: 31% off" [ref=e953] [cursor=pointer]':
+                - /url: /otc/pain-relief-gel-for-lower-back-pain-joint-pain-neck-pain-sprain-by-tata-1mg-otc805271
+                - generic [ref=e955]:
+                  - generic [ref=e956]:
+                    - img "Pain Relief Gel for Lower Back Pain, Joint Pain, Neck Pain & Sprain | by Tata 1mg"
+                  - generic [ref=e957]:
+                    - generic [ref=e958]: Pain Relief Gel for Lower Back Pain, Joint Pain, Neck Pain & Sprain | by Tata 1mg
+                    - generic [ref=e959]: tube of 75 gm Gel
+                    - generic [ref=e961]:
+                      - img [ref=e962]
+                      - img [ref=e966]
+                      - img [ref=e970]
+                      - img [ref=e974]
+                      - img [ref=e978]
+                      - generic [ref=e984]: "4.3"
+                      - generic [ref=e985]: (574)
+                    - generic [ref=e987]:
+                      - text: Get in
+                      - generic [ref=e988]: 30 mins
+                    - generic [ref=e990]:
+                      - generic [ref=e991]:
+                        - generic [ref=e992]: "Discounted Price:"
+                        - text: ₹155
+                      - generic [ref=e993]:
+                        - generic [ref=e994]: "Original Price:"
+                        - text: ₹225
+                      - generic [ref=e995]:
+                        - generic [ref=e996]: "Discount Percentage:"
+                        - text: 31% off
+              - 'link "Gemsoline Soft Gelatin Capsule from Medley for Bone, Joint and Muscle Care Gemsoline Soft Gelatin Capsule from Medley for Bone, Joint and Muscle Care strip of 15 soft gelatin capsules Get by 9pm, Today Discounted Price: ₹190 Original Price: ₹276 Discount Percentage: 31% off" [ref=e999] [cursor=pointer]':
+                - /url: /drugs/gemsoline-soft-gelatin-capsule-from-medley-for-bone-joint-and-muscle-care-117678
+                - generic [ref=e1001]:
+                  - generic [ref=e1002]:
+                    - img "Gemsoline Soft Gelatin Capsule from Medley for Bone, Joint and Muscle Care"
+                  - generic [ref=e1003]:
+                    - generic [ref=e1004]: Gemsoline Soft Gelatin Capsule from Medley for Bone, Joint and Muscle Care
+                    - generic [ref=e1005]: strip of 15 soft gelatin capsules
+                    - generic [ref=e1007]:
+                      - text: Get by
+                      - generic [ref=e1008]: 9pm, Today
+                    - generic [ref=e1010]:
+                      - generic [ref=e1011]:
+                        - generic [ref=e1012]: "Discounted Price:"
+                        - text: ₹190
+                      - generic [ref=e1013]:
+                        - generic [ref=e1014]: "Original Price:"
+                        - text: ₹276
+                      - generic [ref=e1015]:
+                        - generic [ref=e1016]: "Discount Percentage:"
+                        - text: 31% off
+              - 'link "Combo Pack of Tata 1mg Pain Relief Spray (100gm) & Tata 1mg Medicated First Aid Dressing - Washproof, Bandages (20) Combo Pack of Tata 1mg Pain Relief Spray (100gm) & Tata 1mg Medicated First Aid Dressing - Washproof, Bandages (20) combo pack of 2 Packs 4.3 (3220) Discounted Price: ₹203 Original Price: ₹332 Discount Percentage: 39% off" [ref=e1019] [cursor=pointer]':
+                - /url: /otc/combo-pack-of-tata-1mg-pain-relief-spray-100gm-tata-1mg-medicated-first-aid-dressing-washproof-bandages-20-otc857624
+                - generic [ref=e1021]:
+                  - generic [ref=e1022]:
+                    - img "Combo Pack of Tata 1mg Pain Relief Spray (100gm) & Tata 1mg Medicated First Aid Dressing - Washproof, Bandages (20)"
+                  - generic [ref=e1023]:
+                    - generic [ref=e1024]: Combo Pack of Tata 1mg Pain Relief Spray (100gm) & Tata 1mg Medicated First Aid Dressing - Washproof, Bandages (20)
+                    - generic [ref=e1025]: combo pack of 2 Packs
+                    - generic [ref=e1027]:
+                      - img [ref=e1028]
+                      - img [ref=e1032]
+                      - img [ref=e1036]
+                      - img [ref=e1040]
+                      - img [ref=e1044]
+                      - generic [ref=e1050]: "4.3"
+                      - generic [ref=e1051]: (3220)
+                    - generic [ref=e1053]:
+                      - generic [ref=e1054]:
+                        - generic [ref=e1055]: "Discounted Price:"
+                        - text: ₹203
+                      - generic [ref=e1056]:
+                        - generic [ref=e1057]: "Original Price:"
+                        - text: ₹332
+                      - generic [ref=e1058]:
+                        - generic [ref=e1059]: "Discount Percentage:"
+                        - text: 39% off
+              - 'link "Prega News Advance Pregnancy Rapid Single-Step Test Kit Prega News Advance Pregnancy Rapid Single-Step Test Kit box of 1 Test Kit 3.8 (331) Get in 30 mins Discounted Price: ₹57.5 Original Price: ₹112 Discount Percentage: 49% off" [ref=e1062] [cursor=pointer]':
+                - /url: /otc/prega-news-advance-pregnancy-rapid-single-step-test-kit-otc716250
+                - generic [ref=e1064]:
+                  - generic [ref=e1065]:
+                    - img "Prega News Advance Pregnancy Rapid Single-Step Test Kit"
+                  - generic [ref=e1066]:
+                    - generic [ref=e1067]: Prega News Advance Pregnancy Rapid Single-Step Test Kit
+                    - generic [ref=e1068]: box of 1 Test Kit
+                    - generic [ref=e1070]:
+                      - img [ref=e1071]
+                      - img [ref=e1075]
+                      - img [ref=e1079]
+                      - img [ref=e1083]
+                      - img [ref=e1089]
+                      - generic [ref=e1093]: "3.8"
+                      - generic [ref=e1094]: (331)
+                    - generic [ref=e1096]:
+                      - text: Get in
+                      - generic [ref=e1097]: 30 mins
+                    - generic [ref=e1099]:
+                      - generic [ref=e1100]:
+                        - generic [ref=e1101]: "Discounted Price:"
+                        - text: ₹57.5
+                      - generic [ref=e1102]:
+                        - generic [ref=e1103]: "Original Price:"
+                        - text: ₹112
+                      - generic [ref=e1104]:
+                        - generic [ref=e1105]: "Discount Percentage:"
+                        - text: 49% off
+              - 'link "Combo Pack of Tata 1mg Pain Relief Spray (100gm) & Tata 1mg Pain Relief Gel (75gm) Combo Pack of Tata 1mg Pain Relief Spray (100gm) & Tata 1mg Pain Relief Gel (75gm) combo pack of 2 Packs 4.3 (1463) Discounted Price: ₹320 Original Price: ₹501 Discount Percentage: 36% off" [ref=e1108] [cursor=pointer]':
+                - /url: /otc/combo-pack-of-tata-1mg-pain-relief-spray-100gm-tata-1mg-pain-relief-gel-75gm-otc834762
+                - generic [ref=e1110]:
+                  - generic [ref=e1111]:
+                    - img "Combo Pack of Tata 1mg Pain Relief Spray (100gm) & Tata 1mg Pain Relief Gel (75gm)"
+                  - generic [ref=e1112]:
+                    - generic [ref=e1113]: Combo Pack of Tata 1mg Pain Relief Spray (100gm) & Tata 1mg Pain Relief Gel (75gm)
+                    - generic [ref=e1114]: combo pack of 2 Packs
+                    - generic [ref=e1116]:
+                      - img [ref=e1117]
+                      - img [ref=e1121]
+                      - img [ref=e1125]
+                      - img [ref=e1129]
+                      - img [ref=e1133]
+                      - generic [ref=e1139]: "4.3"
+                      - generic [ref=e1140]: (1463)
+                    - generic [ref=e1142]:
+                      - generic [ref=e1143]:
+                        - generic [ref=e1144]: "Discounted Price:"
+                        - text: ₹320
+                      - generic [ref=e1145]:
+                        - generic [ref=e1146]: "Original Price:"
+                        - text: ₹501
+                      - generic [ref=e1147]:
+                        - generic [ref=e1148]: "Discount Percentage:"
+                        - text: 36% off
+              - 'link "Clocip Anti-Fungal Dusting Powder | For Skin Infections, Itching, Rashes Clocip Anti-Fungal Dusting Powder | For Skin Infections, Itching, Rashes bottle of 75 gm Dusting Powder Get in 30 mins Discounted Price: ₹73 Original Price: ₹95.62 Discount Percentage: 24% off" [ref=e1151] [cursor=pointer]':
+                - /url: /drugs/clocip-anti-fungal-dusting-powder-for-skin-infections-itching-rashes-323270
+                - generic [ref=e1153]:
+                  - generic [ref=e1154]:
+                    - img "Clocip Anti-Fungal Dusting Powder | For Skin Infections, Itching, Rashes"
+                  - generic [ref=e1155]:
+                    - generic [ref=e1156]: Clocip Anti-Fungal Dusting Powder | For Skin Infections, Itching, Rashes
+                    - generic [ref=e1157]: bottle of 75 gm Dusting Powder
+                    - generic [ref=e1159]:
+                      - text: Get in
+                      - generic [ref=e1160]: 30 mins
+                    - generic [ref=e1162]:
+                      - generic [ref=e1163]:
+                        - generic [ref=e1164]: "Discounted Price:"
+                        - text: ₹73
+                      - generic [ref=e1165]:
+                        - generic [ref=e1166]: "Original Price:"
+                        - text: ₹95.62
+                      - generic [ref=e1167]:
+                        - generic [ref=e1168]: "Discount Percentage:"
+                        - text: 24% off
+              - 'link "Cipcal D3 (Cholecalciferol) Granules for Bone, Joint and Muscle Health Cipcal D3 (Cholecalciferol) Granules for Bone, Joint and Muscle Health sachet of 1 gm Granules 4.5 (1537) Get in 30 mins Discounted Price: ₹22.8 Original Price: ₹35.67 Discount Percentage: 36% off" [ref=e1171] [cursor=pointer]':
+                - /url: /otc/cipcal-d3-cholecalciferol-granules-for-bone-joint-and-muscle-health-otc180047
+                - generic [ref=e1173]:
+                  - generic [ref=e1174]:
+                    - img "Cipcal D3 (Cholecalciferol) Granules for Bone, Joint and Muscle Health"
+                  - generic [ref=e1175]:
+                    - generic [ref=e1176]: Cipcal D3 (Cholecalciferol) Granules for Bone, Joint and Muscle Health
+                    - generic [ref=e1177]: sachet of 1 gm Granules
+                    - generic [ref=e1179]:
+                      - img [ref=e1180]
+                      - img [ref=e1184]
+                      - img [ref=e1188]
+                      - img [ref=e1192]
+                      - img [ref=e1196]
+                      - generic [ref=e1202]: "4.5"
+                      - generic [ref=e1203]: (1537)
+                    - generic [ref=e1205]:
+                      - text: Get in
+                      - generic [ref=e1206]: 30 mins
+                    - generic [ref=e1208]:
+                      - generic [ref=e1209]:
+                        - generic [ref=e1210]: "Discounted Price:"
+                        - text: ₹22.8
+                      - generic [ref=e1211]:
+                        - generic [ref=e1212]: "Original Price:"
+                        - text: ₹35.67
+                      - generic [ref=e1213]:
+                        - generic [ref=e1214]: "Discount Percentage:"
+                        - text: 36% off
+              - 'link "Combo Pack of Tata 1mg Elbow Support Large & Tata 1mg Pain Relief Spray (100gm) Combo Pack of Tata 1mg Elbow Support Large & Tata 1mg Pain Relief Spray (100gm) combo pack of 2 Packs 4.2 (1007) Discounted Price: ₹303 Original Price: ₹471 Discount Percentage: 36% off" [ref=e1217] [cursor=pointer]':
+                - /url: /otc/combo-pack-of-tata-1mg-elbow-support-large-tata-1mg-pain-relief-spray-100gm-otc864959
+                - generic [ref=e1219]:
+                  - generic [ref=e1220]:
+                    - img "Combo Pack of Tata 1mg Elbow Support Large & Tata 1mg Pain Relief Spray (100gm)"
+                  - generic [ref=e1221]:
+                    - generic [ref=e1222]: Combo Pack of Tata 1mg Elbow Support Large & Tata 1mg Pain Relief Spray (100gm)
+                    - generic [ref=e1223]: combo pack of 2 Packs
+                    - generic [ref=e1225]:
+                      - img [ref=e1226]
+                      - img [ref=e1230]
+                      - img [ref=e1234]
+                      - img [ref=e1238]
+                      - img [ref=e1242]
+                      - generic [ref=e1248]: "4.2"
+                      - generic [ref=e1249]: (1007)
+                    - generic [ref=e1251]:
+                      - generic [ref=e1252]:
+                        - generic [ref=e1253]: "Discounted Price:"
+                        - text: ₹303
+                      - generic [ref=e1254]:
+                        - generic [ref=e1255]: "Original Price:"
+                        - text: ₹471
+                      - generic [ref=e1256]:
+                        - generic [ref=e1257]: "Discount Percentage:"
+                        - text: 36% off
+              - 'link "Pain Relief Spray for Lower Back Pain, Joint Pain, Neck Pain & Sprain | by Tata 1mg Pain Relief Spray for Lower Back Pain, Joint Pain, Neck Pain & Sprain | by Tata 1mg bottle of 100 gm Spray 4.3 (874) Get in 30 mins Discounted Price: ₹165 Original Price: ₹276 Discount Percentage: 40% off" [ref=e1260] [cursor=pointer]':
+                - /url: /otc/pain-relief-spray-for-lower-back-pain-joint-pain-neck-pain-sprain-by-tata-1mg-otc805278
+                - generic [ref=e1262]:
+                  - generic [ref=e1263]:
+                    - img "Pain Relief Spray for Lower Back Pain, Joint Pain, Neck Pain & Sprain | by Tata 1mg"
+                  - generic [ref=e1264]:
+                    - generic [ref=e1265]: Pain Relief Spray for Lower Back Pain, Joint Pain, Neck Pain & Sprain | by Tata 1mg
+                    - generic [ref=e1266]: bottle of 100 gm Spray
+                    - generic [ref=e1268]:
+                      - img [ref=e1269]
+                      - img [ref=e1273]
+                      - img [ref=e1277]
+                      - img [ref=e1281]
+                      - img [ref=e1285]
+                      - generic [ref=e1291]: "4.3"
+                      - generic [ref=e1292]: (874)
+                    - generic [ref=e1294]:
+                      - text: Get in
+                      - generic [ref=e1295]: 30 mins
+                    - generic [ref=e1297]:
+                      - generic [ref=e1298]:
+                        - generic [ref=e1299]: "Discounted Price:"
+                        - text: ₹165
+                      - generic [ref=e1300]:
+                        - generic [ref=e1301]: "Original Price:"
+                        - text: ₹276
+                      - generic [ref=e1302]:
+                        - generic [ref=e1303]: "Discount Percentage:"
+                        - text: 40% off
+              - 'link "Combo Pack of Cipcal 500 Tablet (15) & Neurobion Forte Tablet (30) Combo Pack of Cipcal 500 Tablet (15) & Neurobion Forte Tablet (30) combo pack of 2 strips 4.5 (21387) Discounted Price: ₹124 Original Price: ₹145.65 Discount Percentage: 15% off" [ref=e1306] [cursor=pointer]':
+                - /url: /otc/combo-pack-of-cipcal-500-tablet-15-neurobion-forte-tablet-30-otc783423
+                - generic [ref=e1308]:
+                  - generic [ref=e1309]:
+                    - img "Combo Pack of Cipcal 500 Tablet (15) & Neurobion Forte Tablet (30)"
+                  - generic [ref=e1310]:
+                    - generic [ref=e1311]: Combo Pack of Cipcal 500 Tablet (15) & Neurobion Forte Tablet (30)
+                    - generic [ref=e1312]: combo pack of 2 strips
+                    - generic [ref=e1314]:
+                      - img [ref=e1315]
+                      - img [ref=e1319]
+                      - img [ref=e1323]
+                      - img [ref=e1327]
+                      - img [ref=e1331]
+                      - generic [ref=e1337]: "4.5"
+                      - generic [ref=e1338]: (21387)
+                    - generic [ref=e1340]:
+                      - generic [ref=e1341]:
+                        - generic [ref=e1342]: "Discounted Price:"
+                        - text: ₹124
+                      - generic [ref=e1343]:
+                        - generic [ref=e1344]: "Original Price:"
+                        - text: ₹145.65
+                      - generic [ref=e1345]:
+                        - generic [ref=e1346]: "Discount Percentage:"
+                        - text: 15% off
+          - generic [ref=e1349]:
+            - heading "Popular categories" [level=2] [ref=e1353]
+            - generic [ref=e1356]:
+              - link "Best offers" [ref=e1359] [cursor=pointer]:
+                - /url: /categories/featured/top-deals-1709
+                - generic [ref=e1361]: Best offers
+              - link "Vitamins & Supplements" [ref=e1364] [cursor=pointer]:
+                - /url: /categories/vitamins-nutrition/top-picks-vitamins-nutrition-9
+                - generic [ref=e1366]: Vitamins & Supplements
+              - link "Nutritional Drinks" [ref=e1369] [cursor=pointer]:
+                - /url: /categories/nutritional-drinks-196
+                - generic [ref=e1371]: Nutritional Drinks
+              - link "Skin Care" [ref=e1374] [cursor=pointer]:
+                - /url: /categories/skin-care-19
+                - generic [ref=e1376]: Skin Care
+              - link "Hair Care" [ref=e1379] [cursor=pointer]:
+                - /url: /categories/hair-care-20
+                - generic [ref=e1381]: Hair Care
+              - link "Sexual Wellness" [ref=e1384] [cursor=pointer]:
+                - /url: /categories/sexual-wellness-22
+                - generic [ref=e1386]: Sexual Wellness
+              - link "Ayurveda Products" [ref=e1389] [cursor=pointer]:
+                - /url: /categories/ayurveda-products-45
+                - generic [ref=e1391]: Ayurveda Products
+              - link "Pain Relief" [ref=e1394] [cursor=pointer]:
+                - /url: /categories/pain-relief-32
+                - generic [ref=e1396]: Pain Relief
+              - link "Homeopathy" [ref=e1399] [cursor=pointer]:
+                - /url: /categories/homeopathy-57
+                - generic [ref=e1401]: Homeopathy
+      - generic [ref=e1404]:
+        - generic [ref=e1405]:
+          - img "phone" [ref=e1407]
+          - generic [ref=e1408]: Order Medicines on CallCall us at1800-212-2323or get a call back.
+        - generic [ref=e1409]:
+          - generic [ref=e1410]:
+            - img "India Flag" [ref=e1412]
+            - generic [ref=e1413]: "+91"
+            - textbox "Phone number" [ref=e1415]:
+              - /placeholder: Enter Phone Number
+          - button "Get a Call to Order Medicines" [ref=e1418] [cursor=pointer]:
+            - generic [ref=e1419]: Get a Call to Order Medicines
+          - button "Close" [ref=e1421] [cursor=pointer]:
+            - img "cross_icon" [ref=e1422]
+```
+
+# Test source
+
+```ts
+  1  | 
+  2  | const { test, expect } = require('@playwright/test');
+  3  | 
+  4  | 
+  5  | const getSearchInput = (page) =>
+  6  |   page.getByRole('textbox').first() ||
+  7  |   page.locator('input[type="search"]').first() ||
+  8  |   page.locator('input').first();
+  9  | 
+  10 | 
+  11 | test.describe("Search Functionality Tests", () => {
+  12 | 
+  13 |   test.beforeEach(async ({ page }) => {
+  14 |     await page.goto("https://www.1mg.com/");
+  15 |   });
+  16 | 
+  17 |   
+  18 |   // Valid search for CBC
+  19 |   test("TC_001: Valid search for CBC", async ({ page }) => {
+  20 |     const searchInput = page.getByRole('textbox').first();
+  21 | 
+  22 |     await searchInput.fill("CBC");
+  23 |     await page.keyboard.press("Enter");
+  24 | 
+> 25 |     await page.waitForLoadState("networkidle");
+     |                ^ Error: page.waitForLoadState: Test timeout of 30000ms exceeded.
+  26 | 
+  27 |     await expect(page.locator("text=CBC").first()).toBeVisible();
+  28 |   });
+  29 | 
+  30 | 
+  31 |   // Invalid search query
+  32 |   test("TC_002: Invalid search query", async ({ page }) => {
+  33 |     const searchInput = page.getByRole('textbox').first();
+  34 | 
+  35 |     await searchInput.fill("CBC");
+  36 |     await page.keyboard.press("Enter");
+  37 | 
+  38 |     await page.waitForLoadState("networkidle");
+  39 | 
+  40 |     await expect(page.locator("text=CBC").first()).toBeVisible();
+  41 |   });
+  42 | 
+  43 | 
+  44 |   // Search with whitespace
+  45 |   test("TC_003: Search with whitespace", async ({ page }) => {
+  46 |     const searchInput = page.getByRole('textbox').first();
+  47 | 
+  48 |     await searchInput.fill("CBC");
+  49 |     await page.keyboard.press("Enter");
+  50 | 
+  51 |     await page.waitForLoadState("networkidle");
+  52 | 
+  53 |     await expect(page.locator("text=CBC").first()).toBeVisible();
+  54 |   });
+  55 | 
+  56 | 
+  57 | });
+  58 | 
+```

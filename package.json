@@ -1,0 +1,24 @@
+{
+  "name": "ai-automation-framework-ollama",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node orchestrator.js \"Search CBC test\" https://www.1mg.com",
+    "test": "npx playwright test",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.16.0",
+    "dotenv": "^17.4.2",
+    "fs-extra": "^11.3.4",
+    "inquirer": "^9.3.8",
+    "playwright": "^1.59.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1"
+  }
+}
