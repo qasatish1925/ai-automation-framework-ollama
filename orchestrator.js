@@ -15,7 +15,7 @@ async function run() {
   await reviewTestCases();
   await generatePlaywrightCode(url);
 
-  console.log("✅ Done");
+  console.log("Done");
 }
 
 run();

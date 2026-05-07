@@ -19,7 +19,7 @@ function extractJSON(text) {
 
       return JSON.parse(match[0]);
     } catch (err) {
-      console.error("❌ Failed to parse JSON");
+      console.error("Failed to parse JSON");
       console.error("Raw Response:\n", text);
       throw err;
     }

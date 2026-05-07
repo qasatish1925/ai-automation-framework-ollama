@@ -7,13 +7,13 @@ async function generatePlaywrightCode(url) {
   const testCases = fs.readJsonSync("./output/testCases.json");
   const reviews = fs.readJsonSync("./output/reviewComments.json");
 
-  // ✅ Filter approved
+  // Filter approved
   const approved = testCases.filter(tc => {
     const r = reviews.find(x => x.id === tc.id);
     return r && r.status !== "Rejected";
   });
 
-  // 🔥 DOM detection
+  // DOM detection
   const browser = await chromium.launch();
   const page = await browser.newPage();
   await page.goto(url);
@@ -21,7 +21,7 @@ async function generatePlaywrightCode(url) {
   const locator = await detectSearchLocator(page);
   await browser.close();
 
-  // 🔥 Generate tests dynamically
+  // Generate tests dynamically
   const tests = approved.map(tc => {
     const steps = tc.steps?.join(" → ") || "Execute steps";
 
@@ -40,7 +40,7 @@ async function generatePlaywrightCode(url) {
 `;
   }).join("\n");
 
-  // 🔥 Final file
+  // Final file
   const finalCode = `
 const { test, expect } = require('@playwright/test');
 

@@ -10,7 +10,7 @@ async function callOllama(prompt) {
 
     return response.data.response;
   } catch (error) {
-    console.error("❌ Ollama API Error");
+    console.error("Ollama API Error");
 
     if (error.response) {
       console.error(error.response.data);
