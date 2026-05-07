@@ -158,13 +158,6 @@ npm install -D @playwright/test
 * JIRA/TestRail integration
 
 ---
-
-## 💬 Interview Highlight
-
-“Built an AI-powered QA framework using Ollama with DOM-based locator detection and self-healing automation, ensuring stable and cost-free execution.”
-
----
-
 ## 🏁 Conclusion
 
 This framework demonstrates:
